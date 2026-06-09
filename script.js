@@ -51,7 +51,7 @@ function generarCartas() {
                 <h1>${item.letra}</h1>
             </div>
             <div class='card-dorso'>
-                <img src='img/${item.imagen}' alt='${item.palabra}'>
+                <img src='imagenes/${item.imagen}' alt='${item.palabra}'>
                 <h3>${item.palabra}</h3>
             </div>
         </div>
