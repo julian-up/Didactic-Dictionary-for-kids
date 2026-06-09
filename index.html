@@ -1,48 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Challenge</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Diccionario</title>
+    <script
+      src="https://kit.fontawesome.com/462ed4af42.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="abecedarioApp" class="abecedario-wrapper">
-      <div class="board-container">
-        <h1>Tablero del Abecedario</h1>
-        <p>Haz clic en cualquier letra para cambiar su color.</p>
-
-        <div id="alphabet-grid">
-          <div class="letra-item">A</div>
-          <div class="letra-item">B</div>
-          <div class="letra-item">C</div>
-          <div class="letra-item">D</div>
-          <div class="letra-item">E</div>
-          <div class="letra-item">F</div>
-          <div class="letra-item">G</div>
-          <div class="letra-item">H</div>
-          <div class="letra-item">I</div>
-          <div class="letra-item">J</div>
-          <div class="letra-item">K</div>
-          <div class="letra-item">L</div>
-          <div class="letra-item">M</div>
-          <div class="letra-item">N</div>
-          <div class="letra-item">O</div>
-          <div class="letra-item">P</div>
-          <div class="letra-item">Q</div>
-          <div class="letra-item">R</div>
-          <div class="letra-item">S</div>
-          <div class="letra-item">T</div>
-          <div class="letra-item">U</div>
-          <div class="letra-item">V</div>
-          <div class="letra-item">W</div>
-          <div class="letra-item">X</div>
-          <div class="letra-item">Y</div>
-          <div class="letra-item">Z</div>
-        </div>
-
-        <button id="reset-board-btn">Limpiar Tablero</button>
+    <nav class="navbar">
+      <h2>ABC Challenge</h2>
+      <div class="contador-container">
+        Letras descubiertas: <span id="contador-letras">0</span>/27
       </div>
+    </nav>
+
+    <div class="filtros">
+      <button onclick="filtrar('vocales')">Vocales</button>
+      <button onclick="filtrar('todas')">Todas</button>
     </div>
+
+    <div id="galeria-letras" class="galeria"></div>
+    <footer class="equipo">
+      <h3>Equipo Full Stack. <i class="fa-solid fa-bomb"></i></h3>
+      <p>
+        Líder: Girley Barahona | Desarrolladores: Julian Malpica, Fabian
+        Rodriguez, Andres Escobar, Yosed Sanchez
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
